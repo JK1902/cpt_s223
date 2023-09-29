@@ -1,4 +1,3 @@
-#include "testQueue.hpp"
 #include "testQueue.cpp"
 
 /* 5 Attributes

@@ -1,87 +1,87 @@
     #include "testQueue.hpp"
 
-    // // Constructor to initialize queue
-    // queue::queue(int size)
-    // {
-    // 	arr = new int[size];
-    // 	capacity = size;
-    // 	front = 0;
-    // 	rear = -1;
-    // 	count = 0;
-    // }
+    // Constructor to initialize queue
+    queue::queue(int size)
+    {
+    	arr = new int[size];
+    	capacity = size;
+    	front = 0;
+    	rear = -1;
+    	count = 0;
+    }
 
-    // // Destructor to free memory allocated to the queue
-    // queue::~queue()
-    // {
-    // 	delete arr; 
-    // 	            // however, are there issues with it?
-    // }
+    // Destructor to free memory allocated to the queue
+    queue::~queue()
+    {
+    	delete arr; 
+    	            // however, are there issues with it?
+    }
 
-    // // Utility function to remove front element from the queue
-    // int queue::dequeue()
-    // {
-    // 	// check for queue underflow
-    // 	if (isEmpty())
-    // 	{
-    // 		cout << "UnderFlow\nProcess Stopped\n";
-    // 		return 0;
-    // 	}
+    // Utility function to remove front element from the queue
+    int queue::dequeue()
+    {
+    	// check for queue underflow
+    	if (isEmpty())
+    	{
+    		cout << "UnderFlow\nProcess Stopped\n";
+    		return 0;
+    	}
 
-    // 	cout << "Removing " << arr[front] << '\n';
+    	cout << "Removing " << arr[front] << '\n';
 
-    // 	front = (front + 1) % capacity;
-    // 	count--;
-    //     return 1;
-    // }
+    	front = (front + 1) % capacity;
+    	count--;
+        return 1;
+    }
 
-    // // Utility function to add an item to the queue
-    // int queue::enqueue(int item)
-    // {
-    // 	// check for queue overflow
-    // 	if (isFull())
-    // 	{
-    // 		cout << "OverFlow\nProcess Stopped\n";
-    // 		return 0;
-    // 	}
+    // Utility function to add an item to the queue
+    int queue::enqueue(int item)
+    {
+    	// check for queue overflow
+    	if (isFull())
+    	{
+    		cout << "OverFlow\nProcess Stopped\n";
+    		return 0;
+    	}
 
-    // 	cout << "Inserting " << item << "\n";
+    	cout << "Inserting " << item << "\n";
 
-    // 	rear = (rear + 1);
-    // 	arr[rear] = item;
-    // 	count++;
-    //     return 1;
-    // }
+    	rear = (rear + 1);
+    	arr[rear] = item;
+    	count++;
+        return 1;
+    }
 
-    // // Utility function to return front element in the queue
-    // int queue::peek()
-    // {
-    // 	if (isEmpty())
-    // 	{
-    // 		cout << "UnderFlow\nProcess Stopped\n";
-    // 		// this is a windows specific command
-    //         //system("pause");
-    // 		return 0;
-    // 	}
-    // 	return arr[front];
-    // }
+    // Utility function to return front element in the queue
+    int queue::peek()
+    {
+    	if (isEmpty())
+    	{
+    		cout << "UnderFlow\nProcess Stopped\n";
+    		// this is a windows specific command
+            //system("pause");
+    		return 0;
+    	}
+    	return arr[front];
+    }
 
-    // // Utility function to return the size of the queue
-    // int queue::size()
-    // {
-    // 	return count;
-    // }
+    // Utility function to return the size of the queue
+    int queue::size()
+    {
+    	return count;
+    }
 
-    // // Utility function to check if the queue is empty or not
-    // bool queue::isEmpty()
-    // {
-    // 	return (size() == 0);
-    // }
+    // Utility function to check if the queue is empty or not
+    bool queue::isEmpty()
+    {
+    	return (size() == 0);
+    }
 
-    // // Utility function to check if the queue is full or not
-    // bool queue::isFull()
-    // {
-    // 	return (size() == capacity);
-    // }
+    // Utility function to check if the queue is full or not
+    bool queue::isFull()
+    {
+    	return (size() == capacity);
+    }
 
     /*  Test ID: queue size check - QSC
         Unit: queue::size ()
