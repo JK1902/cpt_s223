@@ -1,5 +1,5 @@
-#ifndef TEST_H
-#define TEST_H
+#ifndef ROOT_H
+#define ROOT_H
 #include <ctime>
 #include <fstream>
 #include <iostream>

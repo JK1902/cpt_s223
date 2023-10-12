@@ -1,4 +1,4 @@
-#include "EventManager.hpp"
+#include "ingame_functions.hpp"
 
 // **************************************************************************************
 // <Player> CLASS MEMBER FUNCTIONS:

@@ -1,4 +1,4 @@
-#include "Data.hpp"
+#include "endgame_functions.hpp"
 
 // **************************************************************************************
 // FILE OPERATION: CHECK WHETHER THE FILE IS OPENED SUCCESSFULLY FOR WRITING.

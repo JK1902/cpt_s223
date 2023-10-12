@@ -1,7 +1,7 @@
-#ifndef DATA_HPP
-#define DATA_HPP
-#include "EventManager.hpp"
-#include "Test.hpp"
+#ifndef ENDGAME_FUNCTIONS_HPP
+#define ENDGAME_FUNCTIONS_HPP
+#include "ingame_functions.hpp"
+#include "root.hpp"
 
 bool openFileOut(std::fstream &, std::string);
 // void exitFunction(Player &, List<Node<Data>> &);

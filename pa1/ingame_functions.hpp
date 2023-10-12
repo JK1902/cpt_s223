@@ -1,6 +1,6 @@
 #ifndef GAME_OPTIONS_HPP
 #define GAME_OPTIONS_HPP
-#include "Test.hpp"
+#include "root.hpp"
 
 // **************************************************************************************
 // DEFINE A CONCRETE CLASS FOR A PLAYER'S GAME RECORD:
